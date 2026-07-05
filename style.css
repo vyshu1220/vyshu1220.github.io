@@ -1180,3 +1180,57 @@ body {
 [data-theme="light"] .participation-section {
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
+
+#loader {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: #0a0a10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+    transition: opacity 0.5s ease;
+}
+
+#loader.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loader-name {
+    font-family: 'Poppins', sans-serif;
+    color: #a78bfa;
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+}
+
+.loader-bar-bg {
+    width: 200px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.loader-bar-fill {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #a78bfa, #f8f8f8);
+    border-radius: 2px;
+    animation: loadFill 1.8s ease forwards;
+}
+
+@keyframes loadFill {
+    to {
+        width: 100%;
+    }
+}
+
+.loader-status {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #8888a8;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+}

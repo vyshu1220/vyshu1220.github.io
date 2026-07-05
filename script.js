@@ -129,3 +129,26 @@ if (cmdWallpaper) cmdWallpaper.addEventListener('click', () => {
     document.getElementById('wallpaper-btn').click();
     cmdOverlay.classList.remove('open');
 });
+
+// Loader
+const statuses = [
+    'Initializing system...',
+    'Loading portfolio...',
+    'Fetching projects...',
+    'Almost ready...',
+    'Welcome!',
+];
+
+let sIdx = 0;
+const statusEl = document.querySelector('.loader-status');
+
+const statusInterval = setInterval(() => {
+    sIdx = (sIdx + 1) % statuses.length;
+    statusEl.textContent = statuses[sIdx];
+}, 400);
+
+setTimeout(() => {
+    clearInterval(statusInterval);
+    document.getElementById('loader').classList.add('hidden');
+    setTimeout(() => document.getElementById('loader').remove(), 600);
+}, 2200);
