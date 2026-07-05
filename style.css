@@ -1235,7 +1235,9 @@ body {
     letter-spacing: 0.1em;
 }
 
+/* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 620px) {
+
     body {
         padding: 10px 8px 40px;
     }
@@ -1243,55 +1245,177 @@ body {
     .mac-window {
         height: 90vh;
         border-radius: 10px;
+        max-width: 100%;
     }
 
     .window-header {
-        padding: 10px 12px;
+        padding: 8px 10px;
+        gap: 6px;
+    }
+
+    .open-to-work {
+        font-size: 0.55rem;
+        padding: 4px 8px;
     }
 
     .cmd-btn {
-        width: 120px;
-        font-size: 0.6rem;
-        padding: 5px 8px;
+        width: 90px;
+        font-size: 0.55rem;
+        padding: 4px 6px;
+    }
+
+    .icon-btn {
+        width: 26px;
+        height: 26px;
     }
 
     .info-bar {
         display: none;
     }
 
+    .window-content {
+        padding: 0 14px 32px;
+    }
+
+    /* Hero */
+    .hero-section {
+        padding: 24px 0 20px;
+    }
+
     .hero-grid {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
         gap: 16px;
     }
 
     .profile-frame {
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
+        margin: 0 auto;
     }
 
     .hero-title {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
+    .micro-text {
+        font-size: 0.8rem;
+    }
+
+    .cta-wrap {
+        justify-content: center;
+    }
+
+    .btn {
+        font-size: 0.65rem;
+        padding: 6px 12px;
+    }
+
+    /* About */
+    .about-section {
+        padding: 24px 0;
+    }
+
+    .body-text {
+        font-size: 0.82rem;
+    }
+
+    /* Education */
+    .education-section {
+        padding: 24px 0;
+    }
+
+    .timeline-title {
+        font-size: 0.78rem;
+    }
+
+    .timeline-degree {
+        font-size: 0.7rem;
+    }
+
+    /* Stack */
     .stack-grid {
         grid-template-columns: 1fr 1fr;
+        gap: 10px;
     }
 
+    .stack-category {
+        padding: 10px;
+    }
+
+    .stack-name {
+        font-size: 0.7rem;
+    }
+
+    /* Experience & Projects */
     .project-entry {
         grid-template-columns: 1fr;
         gap: 6px;
     }
 
+    .project-meta {
+        font-size: 0.62rem;
+        padding-top: 0;
+    }
+
+    .project-title-box {
+        font-size: 0.72rem;
+        padding: 5px 10px;
+        margin-left: 0;
+    }
+
+    .experience-bullet-list li {
+        font-size: 0.72rem;
+    }
+
+    /* Outside Code */
     .outside-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .slideshow {
+        height: 220px;
+    }
+
+    .interests-wrap {
+        padding-top: 0;
+    }
+
+    .interest-item {
+        font-size: 0.75rem;
+        padding: 8px 10px;
+    }
+
+    /* Connect */
+    .connect-title {
+        font-size: 1.4rem;
     }
 
     .connect-socials {
         flex-direction: column;
         align-items: center;
+        gap: 12px;
     }
 
-    .window-content {
-        padding: 0 16px 32px;
+    .social-link {
+        width: 200px;
+        text-align: center;
+    }
+
+    /* Section headers */
+    .section-header {
+        font-size: 0.7rem;
+    }
+
+    /* Participation */
+    .participation-section .project-entry {
+        grid-template-columns: 1fr;
+    }
+
+    /* Timeline */
+    .timeline-container {
+        padding-left: 15px;
     }
 }
