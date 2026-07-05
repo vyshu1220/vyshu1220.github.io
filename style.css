@@ -1278,6 +1278,7 @@ body {
         padding: 0 16px 40px;
     }
 
+    /* Hero */
     .hero-section {
         padding: 24px 0 20px;
     }
@@ -1312,10 +1313,33 @@ body {
         padding: 6px 12px;
     }
 
+    /* About */
     .body-text {
         font-size: 0.82rem;
     }
 
+    /* Education */
+    .timeline-container {
+        padding-left: 20px;
+    }
+
+    .timeline-marker {
+        left: -16px;
+    }
+
+    .timeline-container::before {
+        left: 4px;
+    }
+
+    .timeline-title {
+        font-size: 0.78rem;
+    }
+
+    .timeline-degree {
+        font-size: 0.7rem;
+    }
+
+    /* Stack */
     .stack-grid {
         display: flex;
         flex-direction: row;
@@ -1329,19 +1353,43 @@ body {
         flex-shrink: 0;
     }
 
-    .project-entry {
-        grid-template-columns: 1fr;
-        gap: 6px;
+    /* Experience, Projects, Participation */
+    .experience-section .project-entry,
+    .projects-section .project-entry,
+    .participation-section .project-entry {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 8px;
+    }
+
+    .experience-section .project-meta,
+    .projects-section .project-meta,
+    .participation-section .project-meta {
+        padding-left: 0 !important;
+        padding-top: 0 !important;
     }
 
     .project-title-box {
+        margin-left: 0 !important;
+        width: 100%;
+    }
+
+    .project-details {
+        padding-left: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .experience-bullet-list {
+        padding-left: 0;
         margin-left: 0;
     }
 
     .experience-bullet-list li {
-        font-size: 0.72rem;
+        font-size: 0.8rem;
     }
 
+    /* Outside Code */
     .outside-grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -1359,6 +1407,12 @@ body {
         font-size: 0.75rem;
     }
 
+    /* Section headers */
+    .section-header {
+        font-size: 0.7rem;
+    }
+
+    /* Connect */
     .connect-title {
         font-size: 1.4rem;
     }
@@ -1372,25 +1426,5 @@ body {
     .social-link {
         width: 200px;
         text-align: center;
-    }
-
-    .timeline-container {
-        padding-left: 15px;
-    }
-
-    .participation-section .project-entry {
-        grid-template-columns: 1fr;
-    }
-
-    .section-header {
-        font-size: 0.7rem;
-    }
-
-    .timeline-title {
-        font-size: 0.78rem;
-    }
-
-    .timeline-degree {
-        font-size: 0.7rem;
     }
 }
