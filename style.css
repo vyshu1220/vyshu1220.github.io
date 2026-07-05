@@ -1239,18 +1239,24 @@ body {
 @media (max-width: 620px) {
 
     body {
-        padding: 10px 8px 40px;
+        padding: 0;
+        background: #0f0f13;
+    }
+
+    .bg-blobs {
+        display: none;
     }
 
     .mac-window {
-        height: 90vh;
-        border-radius: 10px;
+        height: 100vh;
         max-width: 100%;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
     }
 
     .window-header {
-        padding: 8px 10px;
-        gap: 6px;
+        padding: 10px 14px;
     }
 
     .open-to-work {
@@ -1259,25 +1265,19 @@ body {
     }
 
     .cmd-btn {
-        width: 90px;
-        font-size: 0.55rem;
+        width: 80px;
+        font-size: 0.5rem;
         padding: 4px 6px;
     }
 
-    .icon-btn {
-        width: 26px;
-        height: 26px;
-    }
-
     .info-bar {
-        display: none;
+        display: none !important;
     }
 
     .window-content {
-        padding: 0 14px 32px;
+        padding: 0 16px 40px;
     }
 
-    /* Hero */
     .hero-section {
         padding: 24px 0 20px;
     }
@@ -1290,13 +1290,13 @@ body {
     }
 
     .profile-frame {
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
         margin: 0 auto;
     }
 
     .hero-title {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     .micro-text {
@@ -1312,56 +1312,29 @@ body {
         padding: 6px 12px;
     }
 
-    /* About */
-    .about-section {
-        padding: 24px 0;
-    }
-
     .body-text {
         font-size: 0.82rem;
     }
 
-    /* Education */
-    .education-section {
-        padding: 24px 0;
-    }
-
-    .timeline-title {
-        font-size: 0.78rem;
-    }
-
-    .timeline-degree {
-        font-size: 0.7rem;
-    }
-
-    /* Stack */
     .stack-grid {
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
         gap: 10px;
+        padding-bottom: 10px;
     }
 
     .stack-category {
-        padding: 10px;
+        min-width: 140px;
+        flex-shrink: 0;
     }
 
-    .stack-name {
-        font-size: 0.7rem;
-    }
-
-    /* Experience & Projects */
     .project-entry {
         grid-template-columns: 1fr;
         gap: 6px;
     }
 
-    .project-meta {
-        font-size: 0.62rem;
-        padding-top: 0;
-    }
-
     .project-title-box {
-        font-size: 0.72rem;
-        padding: 5px 10px;
         margin-left: 0;
     }
 
@@ -1369,7 +1342,6 @@ body {
         font-size: 0.72rem;
     }
 
-    /* Outside Code */
     .outside-grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -1385,10 +1357,8 @@ body {
 
     .interest-item {
         font-size: 0.75rem;
-        padding: 8px 10px;
     }
 
-    /* Connect */
     .connect-title {
         font-size: 1.4rem;
     }
@@ -1404,18 +1374,23 @@ body {
         text-align: center;
     }
 
-    /* Section headers */
-    .section-header {
-        font-size: 0.7rem;
+    .timeline-container {
+        padding-left: 15px;
     }
 
-    /* Participation */
     .participation-section .project-entry {
         grid-template-columns: 1fr;
     }
 
-    /* Timeline */
-    .timeline-container {
-        padding-left: 15px;
+    .section-header {
+        font-size: 0.7rem;
+    }
+
+    .timeline-title {
+        font-size: 0.78rem;
+    }
+
+    .timeline-degree {
+        font-size: 0.7rem;
     }
 }
