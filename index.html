@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name — Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;600&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="mac-window">
+
+        <!-- Window Header -->
+        <header class="window-header">
+            <div class="open-to-work">
+                <span class="work-dot"></span>
+                Open to Work
+            </div>
+            <div style="display:flex; gap:8px;">
+                <button class="cmd-btn" id="cmd-btn">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.35-4.35" />
+                    </svg>
+                    Search, or type '/' ...
+                </button>
+                <button class="icon-btn" id="wallpaper-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                        <circle cx="8.5" cy="8.5" r="1.5" />
+                        <polyline points="21 15 16 10 5 21" />
+                    </svg>
+                </button>
+                <button class="icon-btn" id="theme-toggle">☀</button>
+            </div>
+        </header>
+        <!-- Info Bar -->
+        <nav class="info-bar">
+            <div class="info-item">
+                <span class="info-label">//portfolio</span>
+                <a href="#" class="info-value">Vishalakshi.dev</a>
+            </div>
+            <div class="info-item">
+                <span class="info-label">//contact</span>
+                <a href="https://mail.google.com/mail/?view=cm&to=vvishalakshigoud@gmail.com" target="_blank"
+                    class="info-value">vvishalakshigoud@gmail.com</a>
+            </div>
+            <div class="info-item">
+                <span class="info-label">//github</span>
+                <a href="https://github.com/vyshu1220" target="_blank" class="info-value">github.com/vyshu1220</a>
+            </div>
+            <div class="info-item">
+                <span class="info-label">//location</span>
+                <span class="info-value">
+                    <span class="status-dot"></span>
+                    Hyderabad, IN &nbsp;·&nbsp; <span id="live-date"></span> &nbsp;·&nbsp; <span id="live-clock"></span>
+                </span>
+            </div>
+        </nav>
+
+        <!-- Content Wrapper -->
+        <div class="window-content">
+
+            <!-- Hero -->
+            <section class="hero-section" id="hero">
+                <div class="hero-grid">
+
+                    <!-- LEFT: Photo -->
+                    <div class="profile-frame">
+                        <img src="image.jpg.jpeg" alt="Your Name">
+                    </div>
+
+                    <!-- RIGHT: Text -->
+                    <div>
+                        <h1 class="hero-title"><span>B.Vishalakshi</span></h1>
+                        <div class="subtitle-wrap">
+                            <span class="typed-text" id="typed-text"></span>
+                            <span class="cursor-blink">_</span>
+                        </div>
+                        <p class="micro-text">Building experiences between code and creativity.</p>
+                        <div class="cta-wrap">
+                            <a href="resume.pdf" class="btn">Download Resume</a>
+                            <a href="https://github.com/vyshu1220" target="_blank" class="btn">GitHub</a>
+                            <a href="https://www.linkedin.com/in/kalali-vishalakshi-23347b295" target="_blank"
+                                class="btn">LinkedIn</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- About -->
+            <section class="about-section" id="about">
+                <h2 class="section-header">//about</h2>
+                <p class="body-text">Hi, I'm Vishalakshi, a final-year B.Tech student specializing in
+                    Artificial Intelligence & Data Science. I'm passionate about building impactful digital solutions
+                    through full-stack development, AI, and intuitive user experiences.I enjoy turning ideas into
+                    real-world projects while continuously exploring new technologies. Beyond coding, I have experience
+                    in UI/UX design and creative branding, which helps me build applications that are both functional
+                    and visually engaging.I'm currently focused on strengthening my skills in the MERN stack, machine
+                    learning, and problem-solving while preparing for software engineering roles. My goal is to
+                    contribute to innovative teams, build products that solve meaningful problems, and grow as a
+                    developer through continuous learning.When I'm not coding, you'll usually find me designing,
+                    exploring open-source projects, learning new technologies, or working on creative side projects.</p>
+            </section>
+            <!-- Education -->
+            <section class="education-section" id="education">
+                <h2 class="section-header">//education</h2>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-left">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023 — 2027</span>
+                            <h3 class="timeline-title">St.Martin's Engineering College</h3>
+                            <p class="timeline-degree">B.Tech — Artificial Intelligence & Data Science</p>
+                            <p class="timeline-degree">CGPA: 7.6</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-left">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2021 — 2023</span>
+                            <h3 class="timeline-title">Sri Chaitanya Junior College</h3>
+                            <p class="timeline-degree">Class 12 — MPC / BiPC</p>
+                            <p class="timeline-degree">Percentage: 91%</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-left">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2021</span>
+                            <h3 class="timeline-title">Geetha High School</h3>
+                            <p class="timeline-degree">High School</p>
+                            <p class="timeline-degree">Points: 10</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Skills -->
+            <section class="stack-section" id="stack">
+                <h2 class="section-header">//stack</h2>
+                <div class="stack-grid">
+                    <div class="stack-category">
+                        <h3>LANGUAGES</h3>
+                        <div class="stack-items">
+                            <div class="stack-item"><span class="stack-icon">PY</span><span
+                                    class="stack-name">Python</span></div>
+                            <div class="stack-item"><span class="stack-icon">JS</span><span
+                                    class="stack-name">JavaScript</span></div>
+                            <div class="stack-item"><span class="stack-icon">HT</span><span
+                                    class="stack-name">HTML</span></div>
+                            <div class="stack-item"><span class="stack-icon">CS</span><span
+                                    class="stack-name">CSS</span></div>
+                            <div class="stack-item"><span class="stack-icon">JA</span><span
+                                    class="stack-name">JAVA</span></div>
+                        </div>
+                    </div>
+                    <div class="stack-category">
+                        <h3>FRONTEND</h3>
+                        <div class="stack-items">
+                            <div class="stack-item"><span class="stack-icon">RE</span><span
+                                    class="stack-name">React</span></div>
+                            <div class="stack-item"><span class="stack-icon">TW</span><span class="stack-name">Tailwind
+                                    CSS</span></div>
+                        </div>
+                    </div>
+                    <div class="stack-category">
+                        <h3>BACKEND</h3>
+                        <div class="stack-items">
+                            <div class="stack-item"><span class="stack-icon">PY</span><span
+                                    class="stack-name">Node.js</span></div>
+                            <div class="stack-item"><span class="stack-icon">FL</span><span
+                                    class="stack-name">Flask</span></div>
+                        </div>
+                    </div>
+                    <div class="stack-category">
+                        <h3>TOOLS</h3>
+                        <div class="stack-items">
+                            <div class="stack-item"><span class="stack-icon">GT</span><span
+                                    class="stack-name">Git</span></div>
+                            <div class="stack-item"><span class="stack-icon">VS</span><span
+                                    class="stack-name">VSCode</span></div>
+                            <div class="stack-item"><span class="stack-icon">PB</span><span class="stack-name">Power
+                                    BI</span></div>
+                            <div class="stack-item"><span class="stack-icon">EX</span><span
+                                    class="stack-name">Excel</span></div>
+                            <div class="stack-item"><span class="stack-icon">FG</span><span
+                                    class="stack-name">Figma</span></div>
+                            <div class="stack-item"><span class="stack-icon">GA</span><span class="stack-name">Google
+                                    Antigravity</span></div>
+                        </div>
+                    </div>
+                    <div class="stack-category">
+                        <h3>OTHER</h3>
+                        <div class="stack-items">
+                            <div class="stack-item"><span class="stack-icon">ML</span><span class="stack-name">Machine
+                                    Learning</span></div>
+                            <div class="stack-item"><span class="stack-icon">AI</span><span class="stack-name">AI</span>
+                            </div>
+                            <div class="stack-item"><span class="stack-icon">UX</span><span
+                                    class="stack-name">UI/UX</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Experience -->
+            <section class="experience-section" id="experience">
+                <h2 class="section-header">//experience</h2>
+                <div class="projects-stack">
+                    <article class="project-entry">
+                        <div class="project-meta">31st Oct — 5th Dec</div>
+                        <div class="project-details">
+                            <a href="https://www.ecell.in/" target="_blank" class="project-title-box">
+                                <span style="color: #a78bfa;">ECell IIT Bombay</span>
+                                <span style="color: #e8e8f0;"> / Designer</span>
+                            </a>
+                            <ul class="experience-bullet-list">
+                                <li>Worked as a Designer for one of India's largest entrepreneurship cells.</li>
+                                <li>Created visual content, branding materials and UI designs.</li>
+                                <li>Voluntary • Remote</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- Projects -->
+            <section class="projects-section" id="projects">
+                <h2 class="section-header">//selected work</h2>
+                <div class="projects-stack">
+
+                    <article class="project-entry">
+                        <div class="project-meta">AI • ML • NLP</div>
+                        <div class="project-details">
+                            <div class="project-title-box">
+                                <span style="color: #a78bfa;">AI Interview Assessment</span>
+                                <span style="color: #e8e8f0;"> / College project</span>
+                            </div>
+                            <ul class="experience-bullet-list">
+                                <li>Developed an AI-based system to assess interview performance by analyzing candidate
+                                    responses, tone, and behavior.</li>
+                                <li>Implemented NLP techniques for text-based analysis.</li>
+                                <li>Worked on behavioral analysis models to track patterns.</li>
+                                <li>Designed user-friendly output screens for interview reports.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project-entry">
+                        <div class="project-meta">HTML • CSS • JS</div>
+                        <div class="project-details">
+                            <div class="project-title-box">
+                                <span style="color: #a78bfa;">Personal Portfolio</span>
+                                <span style="color: #e8e8f0;"> / Web</span>
+                            </div>
+                            <ul class="experience-bullet-list">
+                                <li>Designed and built a macOS-style portfolio from scratch.</li>
+                                <li>Features dark/light theme, wallpaper changer, command palette and typing effect.
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- Participation -->
+            <section class="participation-section" id="participation">
+                <h2 class="section-header">//participation</h2>
+                <div class="projects-stack">
+                    <article class="project-entry">
+                        <div class="project-meta">2025 / HACKATHON</div>
+                        <div class="project-details">
+                            <div class="project-title-box">
+                                <span style="color: #a78bfa;">Designathon — UI/UX Hackathon</span>
+                                <span style="color: #e8e8f0;"> //SPOORTHI'25</span>
+                            </div>
+                            <ul class="experience-bullet-list">
+                                <li>Participated in a two-day UI/UX Hackathon organized by SPOORTHI'25, ECE Department,
+                                    JNTUH-UCESTH.</li>
+                                <li>Designed a Family Task Planner app UI with intuitive user-centered design.</li>
+                                <li><a href="https://www.figma.com/design/gK8MKBa1CHWhpsZvgqxzcp/Family-Task-Planner?node-id=12-2668&t=fMSwm1YjYv51vsk7-1"
+                                        target="_blank" class="term-link">View Figma Design →</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- Outside Code -->
+            <section class="outside-section" id="outside">
+                <h2 class="section-header">//outside code</h2>
+                <div class="outside-grid">
+                    <!-- Photo Slideshow -->
+                    <div class="slideshow-wrap">
+                        <div class="slideshow">
+                            <img src="photo1.jpeg" class="slide active" data-position="center 70.5%" alt="Photo 1">
+                            <img src="photo2.jpeg" class="slide" data-position="center center" alt="Photo 2">
+                            <img src="photo3.JPG" class="slide" data-position="center 60%" alt="Photo 3">
+                            <img src="photo4.JPG" class="slide" data-position="center 50%" alt="Photo 4">
+                            <img src="photo5.jpeg" class="slide" data-position="center 50%" alt="Photo 5">
+                            <img src="photo6.JPG" class="slide" data-position="center 70.5%" alt="Photo 6">
+                            <img src="8.JPG" class="slide" data-position="center 70%" alt="Photo 8">
+                            <img src="9.JPG" class="slide" data-position="center 50%" alt="Photo 9">
+                            <div class="slide-caption" id="slide-caption"></div>
+                        </div>
+                        <div class="slide-controls">
+                            <button class="slide-btn" id="prev-btn">&#8249;</button>
+                            <div class="slide-dots" id="slide-dots"></div>
+                            <button class="slide-btn" id="next-btn">&#8250;</button>
+                        </div>
+                    </div>
+                    <!-- Interests -->
+                    <div class="interests-wrap">
+                        <div class="interest-item">
+                            <span class="interest-dot">✦</span>Landscape Photography
+                        </div>
+                        <div class="interest-item">
+                            <span class="interest-dot">✦</span>Video Editing
+                        </div>
+                        <div class="interest-item">
+                            <span class="interest-dot">✦</span>Visual Storytelling
+                        </div>
+                        <div class="interest-item">
+                            <span class="interest-dot">✦</span>
+                            UI Exploration
+                        </div>
+                        <div class="interest-item">
+                            <span class="interest-dot">✦</span>
+                            Creative Coding
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Connect -->
+            <section class="connect-section" id="contact">
+                <h2 class="connect-title">LET'S CONNECT</h2>
+                <div class="connect-socials">
+                    <a href="https://github.com/vyshu1220" target="_blank" class="social-link">GitHub ↗</a>
+                    <a href="https://www.linkedin.com/in/kalali-vishalakshi-23347b295" target="_blank"
+                        class="social-link">LinkedIn ↗</a>
+                    <a href="https://mail.google.com/mail/?view=cm&to=vvishalakshigoud@gmail.com" target="_blank"
+                        class="social-link">Email ↗</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div class="cmd-overlay" id="cmd-overlay">
+        <div class="cmd-palette">
+            <div class="cmd-input-wrap">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.35-4.35" />
+                </svg>
+                <input type="text" class="cmd-input" id="cmd-input" placeholder="Search, or type '/' for terminal...">
+                <span class="cmd-esc">Esc</span>
+            </div>
+            <div class="cmd-body">
+                <div class="cmd-section">
+                    <div class="cmd-label">NAVIGATION</div>
+                    <div class="cmd-item" data-target="hero">Go to Hero <span class="cmd-key">H</span></div>
+                    <div class="cmd-item" data-target="about">Go to About <span class="cmd-key">A</span></div>
+                    <div class="cmd-item" data-target="education">Go to Education <span class="cmd-key">E</span>
+                    </div>
+                    <div class="cmd-item" data-target="experience">Go to Experience <span class="cmd-key">X</span>
+                    </div>
+                    <div class="cmd-item" data-target="projects">Go to Selected Work <span class="cmd-key">W</span>
+                    </div>
+                    <div class="cmd-item" data-target="stack">Go to Stack <span class="cmd-key">S</span></div>
+                    <div class="cmd-item" data-target="outside">Go to Outside Code <span class="cmd-key">O</span>
+                    </div>
+                    <div class="cmd-item" data-target="participation">Go to Participation <span class="cmd-key">V</span>
+                    </div>
+                    <div class="cmd-item" data-target="contact">Go to Connect <span class="cmd-key">C</span></div>
+                </div>
+                <div class="cmd-section">
+                    <div class="cmd-label">UTILITIES</div>
+                    <div class="cmd-item" id="cmd-theme">Toggle Dark / Light Theme <span class="cmd-key">T</span>
+                    </div>
+                    <div class="cmd-item" id="cmd-wallpaper">Change Wallpaper <span class="cmd-key">W</span></div>
+                    <div class="cmd-footer">Use ↑↓ to navigate, Enter to select, Esc to close.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
